@@ -1,4 +1,4 @@
-//sketch 1
+//sketch 1: butterfly
 
 function setup() {
   createCanvas(800, 400);
@@ -46,7 +46,7 @@ function draw(){
   ellipse (280, 60, 80, 80);
 }
 
-//sketch 4: Stroke Attribute: strokeJoin()
+// //sketch 4: Stroke Attribute: strokeJoin()
 
 function setup(){
   createCanvas(400, 200);
@@ -62,8 +62,8 @@ function draw(){
   strokeJoin(BEVEL);
   rect (140, 25, 70, 70);
 }
-
-//sketch 5: Stroke Attribute: strokeCap()
+//
+// //sketch 5: Stroke Attribute: strokeCap()
 function setup(){
   createCanvas(400, 200);
   background(204);
@@ -78,8 +78,8 @@ function draw(){
   line(140, 25, 200, 95);
 }
 
-//sketch 6: noFill()
-
+// //sketch 6: noFill()
+//
 function setup(){
   createCanvas(480, 120);
   background(204);
@@ -92,8 +92,8 @@ function draw(){
   ellipse(228, -16, 200, 200);
 }
 
-//sketch 7: RGB color with noStroke()
-
+// //sketch 7: RGB color with noStroke()
+//
 function setup(){
   createCanvas(480, 120);
   background(0);
@@ -108,9 +108,9 @@ function draw(){
   fill(0, 0, 255);  //blue
   ellipse(268, 118, 200, 200);
 }
-
-//sketch 9: transparency
-
+//
+// //sketch 9: transparency
+//
 function setup(){
 createCanvas(480, 120);
 noStroke();
@@ -121,10 +121,13 @@ function draw(){
   fill (255, 0, 0, 160);
   ellipse(132, 82, 200, 200);
   fill (0, 255, 0, 160);
+  ellipse (228, -16, 200, 200);
+  fill (0, 0, 255, 160);
+  ellipse(268, 118, 200, 200);
 }
-
-//sketch 10: creating a creature
-
+//
+// //sketch 10: creating a creature
+//
 function draw(){
   fill(0);
   beginShape();
