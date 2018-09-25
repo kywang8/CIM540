@@ -9,6 +9,6 @@ function setup(){
 
 function draw(){
   for(var i=0; i < 13; i++){
-    rect (i*y, i*d, 50, d);
+    rect (i*y, i*d, y, d);
   }
 }
