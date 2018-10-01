@@ -62,25 +62,135 @@
 //   }
 // }
 
-var x = 240;
+// var x = 240;
+//
+// function setup(){
+//   createCanvas(480, 240);
+// }
+// function draw(){
+//   if(keyIsPressed){
+//     if(keyCode==LEFT_ARROW){
+//       x = x -5;
+//     }
+//     if(keyCode==RIGHT_ARROW){
+//       x = x + 5;
+//     }
+//   }
+//   fill(255, 0, 0);
+//   //when key is pressed, the 3rd value has to be changed
+//   rect(0, 0, x, height);
+//
+//   fill(0, 0, 255);
+//   //when key is pressed, the 1st and 3rd values have to be changed
+//   rect(x, 0, width-x, height);
+// }
+//
+// var x = 60;
+// var y = 50;
+// function setup() {
+//   createCanvas(700, 480);
+// }
+//
+// function draw(){
+//   background(0);
+//   fill(255);
+//   if(keyIsPressed){
+//     if(keyCode == LEFT_ARROW){
+//       x = x - 5;
+//     } else if(keyCode == RIGHT_ARROW){
+//       x = x + 5;
+//     } else if(keyCode == UP_ARROW){
+//       y = y - 5;
+//     } else if(keyCode == DOWN_ARROW){
+//       y = y + 5;
+//     }
+//     if(key=='d'){
+//       line(x+10, y, width, y);
+//       stroke(255, 255, 0);
+//     }
+//   }
+//   rect(x, y, 10, 10);
+// }
 
+
+// function setup(){
+//   createCanvas(480, 120);
+//   background(204);
+// }
+
+// function draw(){
+//   translate(30, 30);
+//   rect(0, 0, 20, 20);
+//   translate(30, 30);
+//   rect(0, 0, 20, 20);
+// }
+
+// function draw(){
+//   translate (30, 30);
+//   rect (60, 40, 20, 20);
+// }
+
+// function draw(){
+//   translate(mouseX, mouseY);
+//   rect(0, 0, 40, 40);
+// }
+
+
+//ROTATE()
+//rotate(angle, axis);
+
+// function setup(){
+//   createCanvas(240, 240);
+//   background(204);
+//   angleMode(DEGREES);
+// }
+//
+// function draw(){
+//   rect(120, 0, 40, 40);
+//   rotate(45);
+//   rect(120, 0, 40, 40);
+// }
+
+//CREATING ANIMATION USING TRANSLATE AND rotate
+
+// var angle = 0;
+// function setup(){
+//   createCanvas(240, 240);
+//   background(204);
+//   angleMode(DEGREES);
+// }
+//
+// function draw() {
+//   translate(mouseX, mouseY);
+//   rotate(angle);
+//   rect(-20, -20, 40, 40);
+//   angle += 10;
+// }
+//
+// function draw(){
+//   push();                         //push = beginning of animation
+//   translate(mouseX, mouseY);
+//   fill(255);
+//   ellipse(0, 0, 40, 40);
+//   pop();                          //pop = end of animation
+//   fill(255, 0, 0);
+//   rect(100, 100, 40, 40);
+// }
+
+var angle = 0;
 function setup(){
-  createCanvas(480, 240);
+  createCanvas(240, 240);
+  background(204);
+  angleMode(DEGREES);
 }
-function draw(){
-  if(keyIsPressed){
-    if(keyCode==LEFT_ARROW){
-      x = x -5;
-    }
-    if(keyCode==RIGHT_ARROW){
-      x = x + 5;
-    }
-  }
-  fill(255, 0, 0);
-  //when key is pressed, the 3rd value has to be changed
-  rect(0, 0, x, height);
 
-  fill(0, 0, 255);
-  //when key is pressed, the 1st and 3rd values have to be changed
-  rect(x, 0, width-x, height);
+function draw(){
+  push();
+  rotate(360);
+  strokeWeight(5);
+  line(85, 95, 100, 200);
+  translate(0, 0);
+  pop();
+  strokeWeight(2);
+  line(60, 90, 100, 90);
 }

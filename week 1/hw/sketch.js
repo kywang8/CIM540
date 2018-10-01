@@ -12,3 +12,6 @@ function draw() {
   ellipse (190, 70, 15, 15);
   ellipse (270, 70, 15, 15);
 }
+
+
+//https://kywang8.github.io/CIM540/week%206/hw/
