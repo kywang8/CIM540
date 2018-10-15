@@ -10,12 +10,12 @@
 // //   createCanvas(480, 240);
 // // }
 // //
-// // function draw(){
-// //   background(204);
-// //   image(defense2, mouseX, mouseY, 240, 120);
-// //   image(defense, 240, 120, 240, 120);
-// // }
-// //
+// function draw(){
+//   background(204);
+//   image(defense2, mouseX, mouseY, 240, 120);
+//   image(defense, 240, 120, 240, 120);
+// }
+
 // //
 //
 //
@@ -31,13 +31,13 @@
 // function setup(){
 //   createCanvas(480, 500);
 // }
-// //
+// // //
 // function draw(){
 //   image(grass, 0, 0);
 //   tint(255, 50);
 //   image(defense, 0, 0, 480, 300);
 // }
-
+//
 // function draw(){
 //   tint(255);
 //   image(grass, 20, 50, 200, 100);
@@ -129,55 +129,55 @@
 
 //BREAK
 //
-// var buttonDown;
-// var buttonUp;
-// var count = 120;
-//
-// function setup(){
-//   createCanvas(240, 240);
-//
-//   buttonUp = createButton('Down');
-//   buttonUp.position(180, 200);
-//   buttonUp.mousePressed(moveUp);
-//
-//   buttonDown = createButton('Up');
-//   buttonDown.position(0, 200);
-//   buttonDown.mousePressed(moveDown);
-// }
-//
-// function moveUp(){
-//   count += 5;
-// }
-//
-// function moveDown(){
-//   count -= 5;
-// }
-//
-// function draw(){
-//   background(205);
-//   fill(0, 255, 255);
-//   ellipse(120, count, 30, 30);
-// }
-
-//CREATE A CLEAR BUTTON 
-
-var button;
+var buttonDown;
+var buttonUp;
+var count = 120;
 
 function setup(){
   createCanvas(240, 240);
-  background(204);
-  noStroke();
 
-  button = createButton('Clear');
-  button.position(180, 200);
-  button.mousePressed(back);
+  buttonUp = createButton('Down');
+  buttonUp.position(180, 200);
+  buttonUp.mousePressed(moveUp);
+
+  buttonDown = createButton('Up');
+  buttonDown.position(0, 200);
+  buttonDown.mousePressed(moveDown);
 }
 
-function back(){
-  createCanvas(240, 240);
-  background(204);
+function moveUp(){
+  count += 5;
+}
+
+function moveDown(){
+  count -= 5;
 }
 
 function draw(){
-  ellipse(mouseX, mouseY, 10, 10);
+  background(205);
+  fill(0, 255, 255);
+  ellipse(120, count, 30, 30);
 }
+
+//CREATE A CLEAR BUTTON
+
+// var button;
+//
+// function setup(){
+//   createCanvas(240, 240);
+//   background(204);
+//   noStroke();
+//
+//   button = createButton('Clear');
+//   button.position(180, 200);
+//   button.mousePressed(back);
+// }
+//
+// function back(){
+//   createCanvas(240, 240);
+//   background(204);
+// }
+//
+// function draw(){
+//   ellipse(mouseX, mouseY, 10, 10);
+// }

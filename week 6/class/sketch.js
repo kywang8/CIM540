@@ -62,28 +62,28 @@
 //   }
 // }
 
-// var x = 240;
-//
-// function setup(){
-//   createCanvas(480, 240);
-// }
-// function draw(){
-//   if(keyIsPressed){
-//     if(keyCode==LEFT_ARROW){
-//       x = x -5;
-//     }
-//     if(keyCode==RIGHT_ARROW){
-//       x = x + 5;
-//     }
-//   }
-//   fill(255, 0, 0);
-//   //when key is pressed, the 3rd value has to be changed
-//   rect(0, 0, x, height);
-//
-//   fill(0, 0, 255);
-//   //when key is pressed, the 1st and 3rd values have to be changed
-//   rect(x, 0, width-x, height);
-// }
+var x = 240;
+
+function setup(){
+  createCanvas(480, 240);
+}
+function draw(){
+  if(keyIsPressed){
+    if(keyCode==LEFT_ARROW){
+      x = x -5;
+    }
+    if(keyCode==RIGHT_ARROW){
+      x = x + 5;
+    }
+  }
+  fill(255, 0, 0);
+  //when key is pressed, the 3rd value has to be changed
+  rect(0, 0, x, height);
+
+  fill(0, 0, 255);
+  //when key is pressed, the 1st and 3rd values have to be changed
+  rect(x, 0, width-x, height);
+}
 //
 // var x = 60;
 // var y = 50;
